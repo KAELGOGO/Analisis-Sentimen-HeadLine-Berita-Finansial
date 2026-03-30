@@ -107,11 +107,14 @@ function App() {
     setPredictionResult(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/analisis", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ teks: inputText }),
-      });
+      const response = await fetch(
+        "https://kaelgogo-api-sentimen-finansial.hf.space/api/analisis",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ teks: inputText }),
+        },
+      );
 
       if (!response.ok) throw new Error("Server AI belum nyala");
 

@@ -18,8 +18,8 @@ app.add_middleware(
 # 3. Load Model AI dan Kamus TF-IDF (Hanya dilakukan sekali saat server menyala)
 print("Memuat model SVM dan Vectorizer...")
 try:
-    model = joblib.load('model_sentimen_svm.pkl')
-    vectorizer = joblib.load('vectorizer_tfidf.pkl')
+    model = joblib.load('models/model_sentimen_svm.pkl')
+    vectorizer = joblib.load('models/vectorizer_tfidf.pkl')
     print("Model berhasil dimuat!")
 except Exception as e:
     print(f"Error memuat model: {e}")
