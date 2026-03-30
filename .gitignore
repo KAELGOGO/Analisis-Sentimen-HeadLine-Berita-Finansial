@@ -1,0 +1,23 @@
+# Environments
+env/
+venv/
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node modules (buat jaga-jaga kalau di folder website kamu pakai Node.js)
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------------------------------------
+# Opsional: Dataset & Model Machine Learning
+# Hapus tanda '#' di bawah ini jika kamu TIDAK INGIN mengupload file ini
+# ----------------------------------------------------------------------
+# *.csv
+# *.pkl
